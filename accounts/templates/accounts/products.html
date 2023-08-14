@@ -12,11 +12,21 @@
         <table class="table text-light">
             <tr>
                 <th>Product</th>
-                <th>Category</th>
                 <th>Price</th>
+                <th>Category</th>
+                <th>Series</th>
+
+                {% for product in products %}
+            <tr>
+                <td>{{product.name}}</td>
+                <td>${{product.price}}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.series}}</td>
+            </tr>
+            {% endfor %}
             </tr>
         </table>
     </div>
 </div>
 
-{% endblock %}
+{% endblock content %}
