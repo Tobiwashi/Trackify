@@ -12,4 +12,7 @@
             <a class="nav-item nav-link link-light" href="{% url 'products' %}">Products</a>
         </div>
     </div>
+
+    <span class="mx-2">{{request.user}}</span>
+    <span class="mx-2"><a class="btn btn-xs btn-danger nav-link link-light" href="{% url 'logout' %}">Logout</a></span>
 </nav>
